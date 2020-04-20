@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Pizza</title>
+
+    <!-- Bootsrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- LESS основний файл -->
+    <link rel="stylesheet/less" type="text/css" href="assets/less/main.less" />
+    <!-- LESS JavaScript компілятор -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
+    
+</head>
+<body>
+    
+    <div class="col-7 col-sm-8 col-md-9 row fixed-top text-white header">
+        <div class="d-none d-sm-block col-sm-2 col-md-2 h-100"><img src="assets/images/home-pizza-kma.png"></div>
+        <div class="col-12 col-sm-10 col-md-10">
+            <div class="col-12 col-sm-12 col-md-12 row justify-content-around h-50 align-items-center semi-transparent-text text-center">
+                <div class="col-6 col-sm-7 col-md-4 col-lg-3">(044)235-45-45</div>
+                <div class="d-none d-md-block col-md-4 col-lg-3">24/7</div>
+                <div class="d-none d-lg-block col-lg-3">Безкоштовна доставка</div>
+                <div class="col-6 col-sm-5 col-md-4 col-lg-3 text-center"><button class="btn btn-orange login">Увійти</button></div>
+            </div>
+            <hr class="d-none d-md-block col-md-11 col-lg-11 col-xl-11 hr">
+            <div class="d-none d-md-block justify-content-start h-50 align-items-center" style="margin-left: 10%;">
+                <div>Pizza</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-5 col-sm-4 col-md-3 right_block">
+        <div class="buy-header row border-bottom justify-content-between align-items-center">
+            <h3>Замовлення<span class="badge badge-warning" id="pizzaNumber">0</span></h3><button class="btn btn-light float-right font-small clear-all">Очистити все</button>
+        </div>
+        <div class="col-12 cart" id="cart" style="height: 74%;">
+            
+        </div>
+        <div class="buy-footer border-top justify-content-between align-items-center">
+            <div class="row justify-content-between" style="margin: 0px;"><h4>Ціна</h4><h4 class="float-right total-price">0</h4></div>
+            <div class="text-center"><button class="btn btn-danger">замовити</button></div>
+        </div>
+    </div>
+    
+    <div class="col-7 col-sm-8 col-md-9 left_block">
+
+        <div class="col-md-12 psevdo_header"></div>
+        <div class="col-12 col-sm-12 col-md-12 gap"></div>
+
+        <ul class="col-12 col-sm-12 col-md-12 nav nav-pills justify-content-center navigation">
+            <li class="nav-item">
+                <a class="nav-link all" href="#">Усі</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link meat" href="#">М’ясна піца</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link pineapple" href="#">З ананасами</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link mushroom" href="#">З грибами</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link ocean" href="#">Морська піца</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link vega" href="#">Вега піца</a>
+            </li>
+        </ul>
+
+        <div class="row col-md-12" id="pizza_list">
+        </div>
+
+        <div class="col-md-9 gap"></div>
+
+        <div class="col-md-12 footer border-bottom border-top">
+            <p class="text-center">Проект PIZZA KMA - студентський проект НаУКМА.</p>
+        </div>
+    </div>
+
+    <div class="col-2 col-sm-1 col-md-1 discount"><img src="assets/images/discount.png" ></div>
+
+<!-- jQuery JavaScript -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"> </script>
+
+<!--Bootsrap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!--Own JavaScript -->
+<script type="text/javascript"  src="assets/js/main.js"> </script>
+</body>
+</html>
